@@ -80,6 +80,8 @@ code {
 
 #map-container {
   width: 100%;
+  max-height: 94vh;
+
 }
 
 .post {
@@ -91,5 +93,7 @@ code {
   background-color: rgb(181, 221, 255) !important; 
 }
 .post-container {
+  max-height: 94vh;
   width: 40%;
+  overflow: scroll;
 }

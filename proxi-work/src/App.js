@@ -16,6 +16,14 @@ function App() {
           <div class="post pair"> Annonce </div>
           <div class="post"> Annonce </div>
           <div class="post pair"> Annonce </div>
+          <div class="post"> Annonce </div>
+          <div class="post pair"> Annonce </div>
+          <div class="post"> Annonce </div>
+          <div class="post pair"> Annonce </div>
+          <div class="post"> Annonce </div>
+          <div class="post pair"> Annonce </div>
+          <div class="post"> Annonce </div>
+          <div class="post pair"> Annonce </div>
           <Footer/>
         </div>
       </div>
