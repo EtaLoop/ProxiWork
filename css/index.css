@@ -13,8 +13,7 @@ code {
 }
 
 
-/* Header Styles */
-.App-header {
+.app-header {
   background-color: rgba(238, 205, 58, 0.349); /* Bleu foncé */
   color: white;
   padding: 10px;
