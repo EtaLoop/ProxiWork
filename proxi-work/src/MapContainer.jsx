@@ -67,8 +67,8 @@ const MapContainer = () => {
 
   // 3) Render the map container
   return (
-    <div style={{ width: '100%', height: '80vh', margin: 'auto' }}>
-      <div
+    <div style={{ width: '100%', height: '80vh' }} class="nav">
+      <div 
         ref={googleMapRef}
         style={{ width: '100%', height: '100%' }}
       />
