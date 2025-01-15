@@ -23,8 +23,8 @@
 
                 <a class="text" href="">Forgot password?</a>
                 <button class="button" type="submit">Login</button>
-                <button onclick="window.location.href='signIn.php'">Create account</button>
             </form>
+            <button class="button" onclick="window.location.href='signIn.php'">Create account</button>
         </div>
     </div>
     </form>
