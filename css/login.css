@@ -1,0 +1,74 @@
+body {
+    background-color: #FBFEFB;
+}
+
+h1 {
+    font-family: 'Times New Roman';	
+    color: #E4DDC0;
+    text-align: center;
+    font-size: 500%;
+}
+
+.logo-login {
+    width : 250px;
+    height : 250px;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    height: 30em;
+    font-family: 'Arial';
+}
+
+.formulaire  h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+input[type=email]{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #D0D0D0;
+    border-radius: 12px;
+    color: #D0D0D0;
+    box-shadow: 3px 4px 5px #D0D0D0;
+    background-color: #FBFEFB;
+    margin-bottom: 15px;
+}
+
+input[type=password]{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid #D0D0D0;
+    border-radius: 12px;
+    color: #D0D0D0;
+    box-shadow: 3px 4px 5px #D0D0D0;
+    background-color: #FBFEFB;
+    margin-bottom: 15px;
+}
+
+.button-login {
+    font-size: 25px;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    border:none;
+    color: black;
+    background-color: #E4DDC0;
+    cursor:pointer;
+}
+
+.formulaire .text {
+    margin-bottom: 30px;
+}
+
+.midle {
+    display: flex;
+    justify-content: center;
+}
