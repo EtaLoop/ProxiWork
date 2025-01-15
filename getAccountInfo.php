@@ -14,7 +14,7 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['pnumber'])
     $fname = validate($_POST['fname']);
     $lname = validate($_POST['lname']);
     $pnumber = validate($_POST['pnumber']);
-    $add = validate($_POST['eaddressmail']);
+    $add = validate($_POST['address']);
 	$email = validate($_POST['email']);
 	$pass = validate($_POST['password']);
 
@@ -50,6 +50,8 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['pnumber'])
 		if (mysqli_num_rows($sqlEmailResult) === 0 && mysqli_num_rows($sqlNumberResult) === 0) {
             $newSqlRow = "INSERT INTO user (firstname, name, telephone, adresse, email, mdp) VALUES ('$fname', '$lname', '$pnumber', '$add', '$email', '$pass')";
             mysqli_query($conn, $newSqlRow);
+			header("Location: index.php");
+
 		}else{
 			header("Location: signIn.php?error=Email address or phone number already used");
 	        exit();
