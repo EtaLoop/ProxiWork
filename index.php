@@ -10,7 +10,8 @@
     <div>
         <div class="midle">
             <img class="logo-index" src="assets/img/logo.png">
-            <form action="login.php" method="post" class="formulaire">
+            <div class="formulaire">
+            <form action="login.php" method="post" class="form" >
                 <h2>Login Form</h2>
                 <?php if (isset($_GET['error'])) { ?>
      		        <div class="error"><?php echo  $_GET['error']; ?></div>
@@ -25,6 +26,7 @@
                 <button class="button" type="submit">Login</button>
             </form>
             <button class="button" onclick="window.location.href='signIn.php'">Create account</button>
+            </div>
         </div>
     </div>
     </form>

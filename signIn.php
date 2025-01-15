@@ -10,7 +10,8 @@
     <div>
         <div class="midle">
             <img class="logo-index" src="assets/img/logo.png">
-            <form action="getAccountInfo.php" method="post" class="formulaire">
+            <div class="formulaire">
+            <form action="getAccountInfo.php" method="post" class="form">
                 <h2>Sign In</h2>
                 <?php if (isset($_GET['error'])) { ?>
      		        <div class="error"><?php echo  $_GET['error']; ?></div>
@@ -23,9 +24,9 @@
                     <input name="email" type="email" placeholder="   Email Address">
                     <input name="password" type="password" placeholder="   Password"> 
                 </div>
-
                 <button class="button" type="submit">Create account</button>
             </form>
+            </div>
         </div>
     </div>
     </form>
