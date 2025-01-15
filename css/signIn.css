@@ -10,17 +10,18 @@ h1 {
 }
 
 .logo-index {
-    width : 250px;
-    height : 250px;
+    width: 300px;
+    height: 300px;
     margin-right: 175px;
-    margin-top: 110px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 50px;
 }
 
 .formulaire {
     display: flex;
     flex-direction: column;
     width: 20em;
-    height: 35em;
     font-family: 'Arial';
 }
 
