@@ -21,13 +21,76 @@
 
 
     <div class="body-container">
-      <div id="map-container" >
-          <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509687!2d-122.41941508468177!3d37.77492977975937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c0f8a4cb5%3A0x4f0dcb9264e1f6b9!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sfr!4v1615297974572!5m2!1sen!2sfr" 
-              allowfullscreen="yes" 
-              loading="lazy">
-          </iframe>
+      <div id="map" >
+        <script>
+          function initMap() {
+            // Coordonnées du centre de la carte (Toulouse)
+            const centerCoords = { lat: 43.6045, lng: 1.4442 };
+      
+            const iconShrek = {
+              url: "./assets/img/shrek.png",                // Chemin vers l'image
+              scaledSize: new google.maps.Size(100, 100),     // Redimensionne à 50x50
+              anchor: new google.maps.Point(50, 50)         // Ancrage en bas au centre
+            };
+
+            // Création de la carte
+            const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 13,
+              center: centerCoords
+            });
+      
+            // Liste des waypoints (marqueurs) à Toulouse
+            const waypoints = [
+              {
+                position: { lat: 43.604652, lng: 1.444209 },
+                title: "Place du Capitole",
+                url: "https://fr.wikipedia.org/wiki/Place_du_Capitole"
+              },
+              {
+                position: { lat: 43.606, lng: 1.442 },
+                title: "Basilique Saint-Sernin",
+                url: "https://fr.wikipedia.org/wiki/Basilique_Saint-Sernin_de_Toulouse"
+              },
+              {
+                position: { lat: 43.584, lng: 1.481 },
+                title: "Cité de l'espace",
+                url: "https://fr.wikipedia.org/wiki/Cit%C3%A9_de_l%27espace"
+              },
+              {
+                position: { lat: 43.599, lng: 1.439 },
+                title: "Pont Neuf de Toulouse",
+                url: "https://fr.wikipedia.org/wiki/Pont_Neuf_(Toulouse)"
+              }
+            ];
+      
+            // Création des marqueurs et gestion du clic
+            waypoints.forEach((waypoint) => {
+              const marker = new google.maps.Marker({
+                position: waypoint.position,
+                map: map,
+                title: waypoint.title,
+                icon: iconShrek
+              });
+      
+              marker.addListener("click", () => {
+                window.open(waypoint.url, "_blank");
+              });
+            });
+          }
+        </script>
+
+      
+        <!-- Script Google Maps avec votre clé d’API -->
+        <script 
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuRA36AzIS5o-83Qx1V6Rc90NXsZRwU4o&callback=initMap"
+          async
+          defer>
+        </script>
       </div>
+
+
+
+
       <div class="post-container">
         <div class="post"> Annonce </div>
         <div class="post pair"> Annonce </div>
