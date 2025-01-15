@@ -2,7 +2,7 @@
 
 $sname= "localhost";
 $unmae= "root";
-$password = "";
+$password = "your_root_password";
 
 $db_name = "proxiWork";
 
