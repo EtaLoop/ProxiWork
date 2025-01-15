@@ -19,22 +19,22 @@ if (isset($_POST['fname']) && isset($_POST['lname']) && isset($_POST['pnumber'])
 	$pass = validate($_POST['password']);
 
 	if (empty($fname)) {
-		header("Location: index.php?error=First name is required");
+		header("Location: signIn.php?error=First name is required");
 	    exit();
 	}else if(empty($lname)){
-        header("Location: index.php?error=Last name is required");
+        header("Location: signIn.php?error=Last name is required");
 	    exit();
 	}else if(empty($pnumber)){
-        header("Location: index.php?error=Phone number is required");
+        header("Location: signIn.php?error=Phone number is required");
 	    exit();
 	}else if(empty($add)){
-        header("Location: index.php?error=Address is required");
+        header("Location: signIn.php?error=Address is required");
 	    exit();
 	}else if(empty($email)){
-        header("Location: index.php?error=Email address is required");
+        header("Location: signIn.php?error=Email address is required");
 	    exit();
 	}else if(empty($pass)){
-        header("Location: index.php?error=Password is required");
+        header("Location: signIn.php?error=Password is required");
 	    exit();
 	}else{
     
