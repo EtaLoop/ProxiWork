@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +26,13 @@
     <div class="body-container">
       <div id="map" >
         <script>
+          
+          async function get_all_annonce() {
+            const response = await fetch(`get_post.php`)
+            print(response)
+          }
           function initMap() {
+            fetch()
             // Coordonnées du centre de la carte (Toulouse)
             const centerCoords = { lat: 43.6045, lng: 1.4442 };
       
@@ -62,7 +71,9 @@
                 url: "https://fr.wikipedia.org/wiki/Pont_Neuf_(Toulouse)"
               }
             ];
-      
+            
+
+
             // Création des marqueurs et gestion du clic
             waypoints.forEach((waypoint) => {
               const marker = new google.maps.Marker({
